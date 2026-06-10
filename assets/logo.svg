@@ -1,0 +1,8 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ecomembranas</title>
+  <desc id="desc">Marca abstracta de una membrana tensada sobre estructura</desc>
+  <rect width="96" height="96" rx="18" fill="#F5F8F4"/>
+  <path d="M16 57C29 31 55 22 80 34C66 36 51 44 40 61C32 57 24 56 16 57Z" fill="#087F78"/>
+  <path d="M16 57C33 55 49 60 80 34" stroke="#10211F" stroke-width="5" stroke-linecap="round"/>
+  <path d="M28 66H70" stroke="#C97732" stroke-width="5" stroke-linecap="round"/>
+</svg>
