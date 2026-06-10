@@ -286,16 +286,30 @@ textarea {
 }
 
 .proof-strip {
+  background: var(--ink);
+}
+
+.proof-strip-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--line);
 }
 
 .proof-strip article {
-  padding: 1.45rem max(1rem, calc((100vw - var(--container)) / 2));
-  background: var(--ink);
+  min-width: 0;
+  padding: 1.7rem 2rem;
   color: var(--paper);
+}
+
+.proof-strip article:first-child {
+  padding-left: 0;
+}
+
+.proof-strip article:not(:first-child) {
+  border-left: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.proof-strip article:last-child {
+  padding-right: 0;
 }
 
 .proof-strip strong,
@@ -304,12 +318,15 @@ textarea {
 }
 
 .proof-strip strong {
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.42rem;
   color: var(--leaf);
+  font-size: 1rem;
+  line-height: 1.2;
 }
 
 .proof-strip span {
   color: rgba(255, 255, 255, 0.78);
+  line-height: 1.55;
 }
 
 .section {
@@ -722,12 +739,17 @@ textarea {
     padding-top: 0.65rem;
   }
 
-  .proof-strip {
+  .proof-strip-grid {
     grid-template-columns: 1fr;
   }
 
   .proof-strip article {
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 0;
+  }
+
+  .proof-strip article:not(:first-child) {
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+    border-left: 0;
   }
 
   .section {
