@@ -14,14 +14,17 @@ accesorios, asesoría, fabricación de estructuras, confección e instalación.
 ## Despliegue en Cloudflare Pages
 
 Este proyecto no requiere build ni dependencias para producción. Para Git integration en
-Cloudflare Pages, conecta el repositorio `eslinmoises/ecomembranas`, deja el comando de
-build vacío y usa `.` como directorio de salida.
+Cloudflare Pages, conecta el repositorio `eslinmoises/ecomembranas` y usa esta configuración:
 
-También puede desplegarse con Wrangler:
+- Framework preset: `None`
+- Build command: vacío o `npm run build`
+- Deploy command: vacío
+- Build output directory: `.`
+- Root directory: `/`
 
-```bash
-npm run deploy
-```
+No uses `npx wrangler deploy`, `npx wrangler pages deploy` ni `npm run deploy` como comando
+de Cloudflare Pages cuando el despliegue está conectado a GitHub. Pages se encarga de publicar
+automáticamente el directorio de salida después de cada push a `main`.
 
 Los archivos `_headers` y `_redirects` están incluidos para cabeceras, caché de assets y
 atajos de navegación.

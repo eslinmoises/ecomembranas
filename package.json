@@ -5,6 +5,6 @@
   "description": "Sitio estático de Ecomembranas para Cloudflare Pages.",
   "scripts": {
     "dev": "npx wrangler pages dev .",
-    "deploy": "npx wrangler pages deploy . --project-name ecomembranas"
+    "build": "echo \"Static site: no build required\""
   }
 }
