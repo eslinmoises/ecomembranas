@@ -8,6 +8,8 @@ accesorios, asesoría, fabricación de estructuras, confección e instalación.
 - WhatsApp: +1 (385) 221-0741
 - Correo: info@ecomembranas.com
 - Operación: Maracaibo, Venezuela, con envíos a todo el país
+- Producto principal: rollo de lona tarpaulin blackout de 125 m², 2,5 m x 50 m,
+  venta por rollo a USD 1.800
 
 ## Despliegue en Cloudflare Pages
 

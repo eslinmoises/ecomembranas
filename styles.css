@@ -403,6 +403,63 @@ textarea {
   font-size: 0.94rem;
 }
 
+.price-card {
+  display: grid;
+  gap: 1rem;
+  max-width: 34rem;
+  margin-top: 1.45rem;
+  padding: 1.15rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 18px 44px rgba(18, 37, 40, 0.08);
+}
+
+.price-card > div:first-child {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.price-card span,
+.price-card dt {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.price-card strong {
+  color: var(--aqua);
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  line-height: 1;
+}
+
+.price-card dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0;
+}
+
+.price-card dl div {
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+
+.price-card dt,
+.price-card dd {
+  margin: 0;
+}
+
+.price-card dd {
+  margin-top: 0.2rem;
+  font-weight: 800;
+}
+
 .check-list {
   display: grid;
   gap: 0.8rem;
