@@ -13,6 +13,8 @@ accesorios, asesoría, fabricación de estructuras, confección e instalación.
 
 ## Despliegue en Cloudflare Pages
 
+Dominio de producción: `https://ecomembranas.com/`
+
 Este proyecto no requiere build ni dependencias para producción. Para Git integration en
 Cloudflare Pages, conecta el repositorio `eslinmoises/ecomembranas` y usa esta configuración:
 
